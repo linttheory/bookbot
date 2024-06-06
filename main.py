@@ -14,7 +14,7 @@ def main():
     cleaned_book_text = clean_book(book_text)
     total_words, unique_words = count_words(cleaned_book_text)
     print(
-        f"This book has {total_words} total words and {unique_words} total unique words. Numbers were excluded from the count.")
+        f"This book has {total_words} total words and {unique_words} total unique words. Numbers have been excluded from the count.")
     letter_stats = count_letters(cleaned_book_text)
     for letter, count in letter_stats:
         print(f"The letter '{letter}' is used {count} times.")
